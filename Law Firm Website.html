@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justice & Associates Law Firm</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+            color: #333;
+        }
+        /* Custom styles for professional look */
+        .btn-primary {
+            @apply bg-blue-700 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-800 transition duration-300 ease-in-out;
+        }
+        .btn-secondary {
+            @apply bg-gray-200 text-gray-800 px-6 py-3 rounded-lg shadow-md hover:bg-gray-300 transition duration-300 ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-blue-800 rounded-md p-2 hover:text-blue-900 transition-colors">
+                Justice & Associates
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul id="main-nav" class="hidden md:flex space-x-6">
+                <li><a href="#home" class="text-gray-700 hover:text-blue-700 transition-colors font-medium">Home</a></li>
+                <li><a href="#services" class="text-gray-700 hover:text-blue-700 transition-colors font-medium">Services</a></li>
+                <li><a href="#about" class="text-gray-700 hover:text-blue-700 transition-colors font-medium">About Us</a></li>
+                <li><a href="#testimonials" class="text-gray-700 hover:text-blue-700 transition-colors font-medium">Testimonials</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-blue-700 transition-colors font-medium">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white mt-4 rounded-lg shadow-lg">
+            <ul class="flex flex-col space-y-2 p-4">
+                <li><a href="#home" class="block text-gray-700 hover:bg-gray-100 p-2 rounded-md">Home</a></li>
+                <li><a href="#services" class="block text-gray-700 hover:bg-gray-100 p-2 rounded-md">Services</a></li>
+                <li><a href="#about" class="block text-gray-700 hover:bg-gray-100 p-2 rounded-md">About Us</a></li>
+                <li><a href="#testimonials" class="block text-gray-700 hover:bg-gray-100 p-2 rounded-md">Testimonials</a></li>
+                <li><a href="#contact" class="block text-gray-700 hover:bg-gray-100 p-2 rounded-md">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-r from-blue-700 to-blue-900 text-white py-20 md:py-32 rounded-b-lg overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <!-- Placeholder image for background pattern/texture -->
+            <img src="https://placehold.co/1920x1080/000000/FFFFFF?text=Rivera+Law+Firm" alt="Background Pattern" class="w-full h-full object-cover">
+        </div>
+        <div class="container mx-auto text-center relative z-10 px-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
+                Rivera Law Firm
+            </h1>
+            <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90">
+                Providing expert legal counsel and representation with integrity and dedication. We are committed to achieving the best outcomes for our clients.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#contact" class="btn-primary">Schedule a Consultation</a>
+                <a href="#services" class="btn-secondary">Explore Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white rounded-lg shadow-lg mx-auto my-8 max-w-6xl px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-12">Our Practice Areas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out border border-gray-100">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">
+                        <svg class="inline-block w-6 h-6 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H9v-6h2v6zm0-8H9V7h2v2z"/></svg>
+                        Family Law
+                    </h3>
+                    <p class="text-gray-600">Expert guidance on divorce, child custody, adoption, and other family-related legal matters.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out border border-gray-100">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">
+                        <svg class="inline-block w-6 h-6 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H9v-6h2v6zm0-8H9V7h2v2z"/></svg>
+                        Corporate Law
+                    </h3>
+                    <p class="text-gray-600">Assisting businesses with formation, contracts, mergers, acquisitions, and regulatory compliance.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out border border-gray-100">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">
+                        <svg class="inline-block w-6 h-6 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H9v-6h2v6zm0-8H9V7h2v2z"/></svg>
+                        Real Estate Law
+                    </h3>
+                    <p class="text-gray-600">Handling property disputes, transactions, zoning issues, and landlord-tenant agreements.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out border border-gray-100">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">
+                        <svg class="inline-block w-6 h-6 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H9v-6h2v6zm0-8H9V7h2v2z"/></svg>
+                        Criminal Defense
+                    </h3>
+                    <p class="text-gray-600">Vigorous defense for individuals facing criminal charges, ensuring fair legal process.</p>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out border border-gray-100">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">
+                        <svg class="inline-block w-6 h-6 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H9v-6h2v6zm0-8H9V7h2v2z"/></svg>
+                        Personal Injury
+                    </h3>
+                    <p class="text-gray-600">Representing victims of accidents to secure compensation for injuries and damages.</p>
+                </div>
+                <!-- Service Card 6 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out border border-gray-100">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">
+                        <svg class="inline-block w-6 h-6 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15H9v-6h2v6zm0-8H9V7h2v2z"/></svg>
+                        Estate Planning
+                    </h3>
+                    <p class="text-gray-600">Crafting wills, trusts, and estate plans to protect assets and ensure smooth transitions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-blue-50 rounded-lg shadow-lg mx-auto my-8 max-w-6xl px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-10">
+            <div class="md:w-1/2">
+                <img src="C:\Users\user\Desktop\JP -Rivera Law Firm Folder/lawfirm.png?text=Law+Firm+Team" alt="Law Firm Team" class="rounded-lg shadow-xl w-full h-auto object-cover">
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-6">About Justice & Associates</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Justice & Associates is a leading law firm dedicated to providing exceptional legal services to individuals and businesses. With years of experience and a deep understanding of various legal domains, our team of highly skilled attorneys is committed to delivering personalized and effective solutions.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    We pride ourselves on our client-centric approach, integrity, and unwavering commitment to justice. Our mission is to protect your rights and achieve the best possible outcomes, no matter how complex the legal challenge.
+                </p>
+                <a href="#contact" class="btn-primary">Learn More & Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-white rounded-lg shadow-lg mx-auto my-8 max-w-6xl px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-12">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial Card 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-100">
+                    <p class="text-lg italic text-gray-700 mb-4">"Justice & Associates provided outstanding support during a difficult time. Their expertise and compassion were truly invaluable."</p>
+                    <p class="font-semibold text-blue-700">- Jane Doe, Client</p>
+                </div>
+                <!-- Testimonial Card 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-100">
+                    <p class="text-lg italic text-gray-700 mb-4">"Professional, responsive, and highly effective. They handled our corporate legal needs with utmost precision."</p>
+                    <p class="font-semibold text-blue-700">- John Smith, Business Owner</p>
+                </div>
+                <!-- Testimonial Card 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-100">
+                    <p class="text-lg italic text-gray-700 mb-4">"I highly recommend this firm. They fought tirelessly for my rights and achieved a favorable outcome."</p>
+                    <p class="font-semibold text-blue-700">- Emily White, Client</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-blue-700 text-white rounded-t-lg overflow-hidden">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Get in Touch</h2>
+            <p class="text-lg mb-10 max-w-2xl mx-auto opacity-90">
+                Have a legal question or need to schedule a consultation? Contact us today.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <div class="bg-blue-800 p-6 rounded-lg shadow-xl w-full md:w-1/3">
+                    <h3 class="text-xl font-semibold mb-3">Location</h3>
+                    <p class="text-gray-200">Ground Floor, C4B Bldg, Macabulos Drive<br>San Roque, Tarlac City</p>
+                </div>
+                <div class="bg-blue-800 p-6 rounded-lg shadow-xl w-full md:w-1/3">
+                    <h3 class="text-xl font-semibold mb-3">Contact Details</h3>
+                    <p class="text-gray-200">Phone: 0917 177 4451<br>Email: deylabsmitch@yahoo.com</p>
+                </div>
+                <div class="bg-blue-800 p-6 rounded-lg shadow-xl w-full md:w-1/3">
+                    <h3 class="text-xl font-semibold mb-3">Office Hours</h3>
+                    <p class="text-gray-200">Mon - Fri: 8:30 AM - 5:00 PM<br>Sat - Sun: Closed</p>
+                </div>
+            </div>
+            <!-- Simple Contact Form (optional) -->
+            <div class="mt-12 max-w-xl mx-auto bg-blue-800 p-8 rounded-lg shadow-xl">
+                <h3 class="text-2xl font-semibold mb-6">Send Us a Message</h3>
+		<form action="https://formsubmit.co/jeromebonifacio165@gmail.com" method="POST">
+                <form class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md bg-blue-900 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300 border border-blue-600">
+                    <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md bg-blue-900 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300 border border-blue-600">
+                    <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded-md bg-blue-900 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-300 border border-blue-600"></textarea>
+                    <button type="submit" class="btn-primary w-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-8 px-6 md:px-10 rounded-t-lg">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Justice & Associates Law Firm. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mainNav = document.getElementById('main-nav');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
